@@ -15,20 +15,20 @@ navigation.querySelectorAll("a").forEach((link) => {
 
 const tastingNotes = {
   Original: {
-    copy: "Ren och krispig session lager med toner av ljust bröd, örter och ett försiktigt citrusslut.",
-    values: [70, 30, 45],
+    copy: "Australiensisk pale ale med passionsfrukt, citrus, mjuk maltkropp och en krispig avslutning.",
+    values: [75, 45, 40],
   },
-  Kväll: {
-    copy: "Mjuk lager med rund maltkropp, lätt rostad ton och en balanserad, torr avslutning.",
-    values: [55, 45, 65],
+  Session: {
+    copy: "Lätt lager med ren maltton, låg beska och en krispig, torr avslutning.",
+    values: [80, 20, 30],
   },
   Sommar: {
     copy: "Frisk session pale ale med grapefrukt, apelsinskal och en uppiggande men snäll beska.",
     values: [40, 75, 55],
   },
   Ljus: {
-    copy: "Extra lätt lager med rena spannmålstoner, låg beska och hög törstsläckarfaktor.",
-    values: [80, 20, 30],
+    copy: "Ljus session pale ale med citrus, mjuk humlebeska och en frisk, torr avslutning.",
+    values: [70, 55, 35],
   },
 };
 
