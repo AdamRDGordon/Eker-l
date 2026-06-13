@@ -47,10 +47,10 @@ button { color: inherit; font: inherit; }
 .hero { min-height: calc(100vh - 84px); display: grid; grid-template-columns: 36% 64%; border-bottom: 1px solid var(--line); }
 .hero-copy { padding: 7vw 3vw 4vw; display: flex; align-items: flex-start; flex-direction: column; }
 .eyebrow, .section-number { margin: 0 0 1.8rem; font: 700 .9rem "Barlow Condensed", sans-serif; text-transform: uppercase; letter-spacing: .16em; }
-h1, h2, h3 { margin: 0; font-family: "Barlow Condensed", sans-serif; font-weight: 800; text-transform: uppercase; letter-spacing: -.055em; line-height: .86; }
-h1 { font-size: clamp(5.1rem, 9vw, 9.5rem); }
+h1, h2, h3 { margin: 0; font-family: "Barlow Condensed", sans-serif; font-weight: 800; text-transform: uppercase; letter-spacing: -.04em; line-height: .98; }
+h1 { font-size: clamp(5.1rem, 9vw, 9.5rem); line-height: .94; }
 h1 em, .manifesto em { color: var(--pink); font-style: normal; }
-h1 em { display: inline-block; transform: translateY(.08em); margin-bottom: .08em; }
+h1 em { display: inline-block; }
 .hero-intro { max-width: 28rem; margin: auto 0 1.8rem; font-size: clamp(1rem, 1.3vw, 1.25rem); line-height: 1.55; }
 .text-link { display: flex; justify-content: space-between; width: 100%; padding: 1rem 0; border-top: 1px solid var(--ink); text-transform: uppercase; font: 700 1rem "Barlow Condensed", sans-serif; letter-spacing: .05em; }
 
@@ -93,20 +93,24 @@ h1 em { display: inline-block; transform: translateY(.08em); margin-bottom: .08e
 .section-heading > p { max-width: 28rem; line-height: 1.6; }
 .beer-grid { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--ink); }
 .beer-card { min-height: 44rem; padding: 1rem; border-right: 1px solid var(--ink); display: flex; flex-direction: column; }
+.future-beer { position: relative; }
+.future-beer .mini-can { opacity: .58; }
+.coming-label { position: absolute; z-index: 2; top: 1rem; left: 1rem; right: 1rem; padding: .7rem; color: var(--paper); background: var(--ink); text-align: center; text-transform: uppercase; font: 800 .9rem "Barlow Condensed"; letter-spacing: .12em; }
+.future-note { border-top: 1px solid var(--ink); padding-top: .8rem; margin-top: auto; text-transform: uppercase; font: 700 .85rem "Barlow Condensed"; letter-spacing: .08em; }
 .beer-card:last-child { border-right: 0; }
 .mini-can { width: 70%; margin: 1.5rem auto 2.5rem; aspect-ratio: .54; border-radius: 12% 12% 9% 9%; background: rgba(255,255,255,.32); box-shadow: inset -10px 0 18px rgba(0,0,0,.1), inset 8px 0 16px rgba(255,255,255,.25), 0 15px 20px rgba(11,35,25,.15); display: flex; flex-direction: column; align-items: center; justify-content: center; transition: transform .3s; }
 .beer-card:hover .mini-can { transform: rotate(3deg) translateY(-8px); }
 .mini-can strong { font-size: clamp(5rem, 7.5vw, 8rem); }
 .mini-can span { margin-top: 1.3rem; font: 800 1rem "Barlow Condensed"; }
 .beer-meta { display: flex; justify-content: space-between; border-top: 1px solid var(--ink); padding-top: .6rem; font: 700 .85rem "Barlow Condensed"; }
-.beer-card h3 { font-size: clamp(3.2rem, 4vw, 5rem); margin-top: 1rem; }
+.beer-card h3 { font-size: clamp(3.2rem, 4vw, 5rem); line-height: 1; margin-top: 1rem; }
 .beer-card p { line-height: 1.5; min-height: 4.5rem; }
 .detail-button { border: 0; border-top: 1px solid var(--ink); background: transparent; padding: .8rem 0 0; margin-top: auto; text-align: left; cursor: pointer; text-transform: uppercase; font: 700 .85rem "Barlow Condensed"; }
 .card-cream { background: var(--cream); }.card-blue { background: var(--blue); }.card-yellow { background: var(--yellow); }.card-green { background: var(--green); }
 
 .manifesto { min-height: 90vh; padding: 5vw 3vw 3vw; color: var(--paper); background: var(--ink); display: flex; flex-direction: column; text-align: center; justify-content: space-between; }
 .manifesto > p { font: 700 .9rem "Barlow Condensed"; text-transform: uppercase; letter-spacing: .16em; }
-.manifesto h2 { font-size: clamp(5rem, 13vw, 14rem); }
+.manifesto h2 { font-size: clamp(5rem, 13vw, 14rem); line-height: .94; }
 .manifesto-footer { display: flex; justify-content: space-between; border-top: 1px solid rgba(243,240,233,.35); padding-top: 1rem; font: 600 .85rem "DM Sans"; }
 
 .find-us { display: grid; grid-template-columns: 1fr 1fr; min-height: 75vh; }
